@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageRecette"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_plat"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@id/imageRecette"
+        android:layout_toRightOf="@id/imageRecette"
+        android:layout_toEndOf="@id/imageRecette"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:text="Nom" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:paddingRight="20dp"
+            android:gravity="right"
+            android:text="Description" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageRecette"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>

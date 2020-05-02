@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AjouterRecetteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nom : " />
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Nom" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Description : " />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Description"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Type : " />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/radioGroup_type">
+
+            <RadioButton
+                android:id="@+id/rbSamsung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Samsung"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbApple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple"
+                android:checked="false" />
+
+            <RadioButton
+                android:id="@+id/rbHuawei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Huawei"
+                android:checked="false" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/saveProd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:text="Enregistrer" />
+
+</LinearLayout>
