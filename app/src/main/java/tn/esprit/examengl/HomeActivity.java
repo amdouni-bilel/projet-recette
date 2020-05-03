@@ -19,7 +19,8 @@ import java.util.List;
 public class HomeActivity extends AppCompatActivity {
 
     public static final int REQUEST_CODE = 99;
-
+    public static final String NAME_KEY = "NAME";
+    public static final String DESCRIPTION_KEY = "DESCRIPTION";
     private Button btnAddProd, btnLogout;
     private RecyclerView mRecyclerView;
     private RecetteAdapter recetteAdapter;

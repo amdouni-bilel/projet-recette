@@ -51,7 +51,7 @@ public class RecetteAdapter extends RecyclerView.Adapter<RecetteAdapter.RecetteH
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, AfficherRecetteActivity.class);
                 intent.putExtra("ID_PROD",singleItem.getUid());
-                mContext.startActivity(intent);     
+                mContext.startActivity(intent);
             }
         });
     }
